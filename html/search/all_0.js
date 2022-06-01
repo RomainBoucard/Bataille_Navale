@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['projet_5fbataille_5fnavale_0',['Projet_Bataille_Navale',['../md_readme.html',1,'']]]
+  ['affichagebateau_0',['affichageBateau',['../classJoueur.html#a92441f54209e82d7cf809d0b3142b00a',1,'Joueur']]],
+  ['affichagetir_1',['affichageTir',['../classJoueur.html#a80288c5dc37d12362b1323e19b0e6c78',1,'Joueur']]]
 ];

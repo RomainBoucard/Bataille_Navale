@@ -23,9 +23,6 @@ Joueur::Joueur(){
 	this->NombreDeBateaux = 0;
   this->tabDeBateau[4] ={NULL};
   this->IA=false;
-
-  // initGrilleBateau();
-  // initGrilleTir();
 }
 
 string Joueur::getName(){
@@ -76,7 +73,7 @@ bool Joueur::creerBateau(Joueur *adversaire){
         retVal=check_coord(input, taille_bateaux[i]);   //check coordonnées correctes +case libre + cases autour libre
         if (!retVal){
           cout << "Coordonnees incorrectes ou espace insufisant" << endl << "Veuillez entrer une nouvelle case" << endl;
-          suivant("Inserez un caractere et appuyez sur Entree pour continuer..");
+          suivant("Inserez un caractere et appuyez sur Entree pour continuer...");
         }
       }while (!retVal) ;
     

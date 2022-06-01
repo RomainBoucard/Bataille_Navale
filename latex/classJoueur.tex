@@ -1,0 +1,346 @@
+\hypertarget{classJoueur}{}\doxysection{Joueur Class Reference}
+\label{classJoueur}\index{Joueur@{Joueur}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJoueur_add6c98be3020651d84f6d75ccc1d867e}\label{classJoueur_add6c98be3020651d84f6d75ccc1d867e}} 
+\mbox{\hyperlink{classJoueur_add6c98be3020651d84f6d75ccc1d867e}{Joueur}} ()
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_ab36663a590a1bd2c0d0c05c958e92819}{get\+\_\+direction}} (int p\+\_\+idirection)
+\begin{DoxyCompactList}\small\item\em Direction Savoir si direction possible pour placement bateau. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_aa11b6e377f07bd2463c2a81f65de4a98}{get\+\_\+\+Tab\+Tir}} ()
+\begin{DoxyCompactList}\small\item\em Mémoire des tirs Affichage des tirs effectués sur l\textquotesingle{}adversaire. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a396daaf57aa9b3e29911b6b378ffba7a}{get\+\_\+tab\+Bateaux}} ()
+\begin{DoxyCompactList}\small\item\em Coordonnées bateaux Affichage des coordonnées de chaque case pour tous les bateaux. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classJoueur_a2928c8c8f4563a545aa5b9bb077bd6a4}{get\+Name}} ()
+\begin{DoxyCompactList}\small\item\em Nom du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJoueur_abbf8c11ea8a2f930a51cabfaed9bddd2}{set\+Name}} (string name)
+\begin{DoxyCompactList}\small\item\em Modification du nom du joueur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJoueur_a068f9e05da3c41004ec8c8c2b337a622}{set\+IA}} (bool val)
+\begin{DoxyCompactList}\small\item\em Modification de la variable de choix pour l\textquotesingle{}IA. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classJoueur_a476c5e83be34c9762f1cb592248b05e0}{set\+Nombre\+Bateau}} (int x)
+\begin{DoxyCompactList}\small\item\em Modification du nombre de bateaux du joueur. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJoueur_a1372658dd0b28cc510870e2f3ac3ab57}\label{classJoueur_a1372658dd0b28cc510870e2f3ac3ab57}} 
+void {\bfseries Affiche\+Test} ()
+\item 
+bool \mbox{\hyperlink{classJoueur_a92441f54209e82d7cf809d0b3142b00a}{affichage\+Bateau}} (\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$adv)
+\begin{DoxyCompactList}\small\item\em Grille des bateaux Affiche la grille du joueur avec les positions des bateaux et les tirs de l\textquotesingle{}adversaire. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a80288c5dc37d12362b1323e19b0e6c78}{affichage\+Tir}} ()
+\begin{DoxyCompactList}\small\item\em Grille des tirs Affiche la grille des tirs du joueur (loupé, touché, coulé) \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a45974aea1e256e4e3c17cb537ea22669}{creer\+Bateau}} (\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$adversaire)
+\begin{DoxyCompactList}\small\item\em Création des bateaux Création et positionnement des bateaux du \mbox{\hyperlink{classJoueur}{Joueur}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a488129c1f8509b96d004bc1f59aa58a6}{tir}} (\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$adversaire)
+\begin{DoxyCompactList}\small\item\em Tir Tir d\textquotesingle{}un joueur sur un bateau adverse. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a4774e6118c7ceba83552a4db427ae25b}{tir\+\_\+recu}} (\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$adversaire, string case\+\_\+tire)
+\begin{DoxyCompactList}\small\item\em Tir reçu Traitement du tir reçu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a09063820a8980233380bbb83022fbe61}{bateau\+\_\+coule}} (int bateau, \mbox{\hyperlink{classJoueur}{Joueur}} $\ast$adversaire)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classBateau}{Bateau}} coulé Modification de la grille de tir pour montrer que la bateau touché est maintenant coulé \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a38f6d3ff27c6195079bf6393524f6333}{lose}} ()
+\begin{DoxyCompactList}\small\item\em Win Indique si le joueur ne possède plus de bateaux et a perdu. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_aca2dccc76c7d99bfca3b444821fe5a55}{modif\+Grille}} (string Start\+Bateau, int direction, int taille\+\_\+bateau)
+\begin{DoxyCompactList}\small\item\em Modification de la grille de bateaux Ajoute un nouveau bateau à la grille. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_aaee193b0f08bf2a8ad6af23b18afb36c}{init\+Grille\+Bateau}} ()
+\begin{DoxyCompactList}\small\item\em Initialisation de la grille de bateaux. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classJoueur_a85c0052370ee8dd40617a8bc357393de}{init\+Grille\+Tir}} ()
+\begin{DoxyCompactList}\small\item\em Initialisation de la grille de tir. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classJoueur_a1c44790decb7b55fe4b72ae861ee2b88}{Grille\+Bateau}} \mbox{[}10\mbox{]}\mbox{[}10\mbox{]}
+\item 
+int \mbox{\hyperlink{classJoueur_aeaa2702e469a850d3de74c1c2d979ad1}{Grille\+Tir}} \mbox{[}10\mbox{]}\mbox{[}10\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJoueur_a92441f54209e82d7cf809d0b3142b00a}\label{classJoueur_a92441f54209e82d7cf809d0b3142b00a}} 
+\index{Joueur@{Joueur}!affichageBateau@{affichageBateau}}
+\index{affichageBateau@{affichageBateau}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{affichageBateau()}{affichageBateau()}}
+{\footnotesize\ttfamily bool Joueur\+::affichage\+Bateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$}]{adv }\end{DoxyParamCaption})}
+
+
+
+Grille des bateaux Affiche la grille du joueur avec les positions des bateaux et les tirs de l\textquotesingle{}adversaire. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv} & Pointeur sur la classe du joueur adverse pour afficher ses tirs \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a80288c5dc37d12362b1323e19b0e6c78}\label{classJoueur_a80288c5dc37d12362b1323e19b0e6c78}} 
+\index{Joueur@{Joueur}!affichageTir@{affichageTir}}
+\index{affichageTir@{affichageTir}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{affichageTir()}{affichageTir()}}
+{\footnotesize\ttfamily bool Joueur\+::affichage\+Tir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Grille des tirs Affiche la grille des tirs du joueur (loupé, touché, coulé) 
+
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a09063820a8980233380bbb83022fbe61}\label{classJoueur_a09063820a8980233380bbb83022fbe61}} 
+\index{Joueur@{Joueur}!bateau\_coule@{bateau\_coule}}
+\index{bateau\_coule@{bateau\_coule}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{bateau\_coule()}{bateau\_coule()}}
+{\footnotesize\ttfamily bool Joueur\+::bateau\+\_\+coule (\begin{DoxyParamCaption}\item[{int}]{bateau,  }\item[{\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$}]{adversaire }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classBateau}{Bateau}} coulé Modification de la grille de tir pour montrer que la bateau touché est maintenant coulé 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em bateau} & Numéro du bateau coulé \\
+\hline
+\mbox{\texttt{ in}}  & {\em adversaire} & \mbox{\hyperlink{classJoueur}{Joueur}} ayant réalisé le tir \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a45974aea1e256e4e3c17cb537ea22669}\label{classJoueur_a45974aea1e256e4e3c17cb537ea22669}} 
+\index{Joueur@{Joueur}!creerBateau@{creerBateau}}
+\index{creerBateau@{creerBateau}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{creerBateau()}{creerBateau()}}
+{\footnotesize\ttfamily bool Joueur\+::creer\+Bateau (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$}]{adversaire }\end{DoxyParamCaption})}
+
+
+
+Création des bateaux Création et positionnement des bateaux du \mbox{\hyperlink{classJoueur}{Joueur}}. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv} & Pointeur sur la classe du joueur adverse pour afficher ses tirs si besoin \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_ab36663a590a1bd2c0d0c05c958e92819}\label{classJoueur_ab36663a590a1bd2c0d0c05c958e92819}} 
+\index{Joueur@{Joueur}!get\_direction@{get\_direction}}
+\index{get\_direction@{get\_direction}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{get\_direction()}{get\_direction()}}
+{\footnotesize\ttfamily bool Joueur\+::get\+\_\+direction (\begin{DoxyParamCaption}\item[{int}]{p\+\_\+idirection }\end{DoxyParamCaption})}
+
+
+
+Direction Savoir si direction possible pour placement bateau. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em p\+\_\+idirection} & Sélection de la direction \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si direction possible 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a396daaf57aa9b3e29911b6b378ffba7a}\label{classJoueur_a396daaf57aa9b3e29911b6b378ffba7a}} 
+\index{Joueur@{Joueur}!get\_tabBateaux@{get\_tabBateaux}}
+\index{get\_tabBateaux@{get\_tabBateaux}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{get\_tabBateaux()}{get\_tabBateaux()}}
+{\footnotesize\ttfamily bool Joueur\+::get\+\_\+tab\+Bateaux (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Coordonnées bateaux Affichage des coordonnées de chaque case pour tous les bateaux. 
+
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_aa11b6e377f07bd2463c2a81f65de4a98}\label{classJoueur_aa11b6e377f07bd2463c2a81f65de4a98}} 
+\index{Joueur@{Joueur}!get\_TabTir@{get\_TabTir}}
+\index{get\_TabTir@{get\_TabTir}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{get\_TabTir()}{get\_TabTir()}}
+{\footnotesize\ttfamily bool Joueur\+::get\+\_\+\+Tab\+Tir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Mémoire des tirs Affichage des tirs effectués sur l\textquotesingle{}adversaire. 
+
+\begin{DoxyReturn}{Returns}
+vrai si fonction réalisée correctement 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a2928c8c8f4563a545aa5b9bb077bd6a4}\label{classJoueur_a2928c8c8f4563a545aa5b9bb077bd6a4}} 
+\index{Joueur@{Joueur}!getName@{getName}}
+\index{getName@{getName}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily string Joueur\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Nom du joueur. 
+
+Fonction get et set \begin{DoxyReturn}{Returns}
+string \+: nom du joueur 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_aaee193b0f08bf2a8ad6af23b18afb36c}\label{classJoueur_aaee193b0f08bf2a8ad6af23b18afb36c}} 
+\index{Joueur@{Joueur}!initGrilleBateau@{initGrilleBateau}}
+\index{initGrilleBateau@{initGrilleBateau}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{initGrilleBateau()}{initGrilleBateau()}}
+{\footnotesize\ttfamily bool Joueur\+::init\+Grille\+Bateau (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialisation de la grille de bateaux. 
+
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a85c0052370ee8dd40617a8bc357393de}\label{classJoueur_a85c0052370ee8dd40617a8bc357393de}} 
+\index{Joueur@{Joueur}!initGrilleTir@{initGrilleTir}}
+\index{initGrilleTir@{initGrilleTir}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{initGrilleTir()}{initGrilleTir()}}
+{\footnotesize\ttfamily bool Joueur\+::init\+Grille\+Tir (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Initialisation de la grille de tir. 
+
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a38f6d3ff27c6195079bf6393524f6333}\label{classJoueur_a38f6d3ff27c6195079bf6393524f6333}} 
+\index{Joueur@{Joueur}!lose@{lose}}
+\index{lose@{lose}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{lose()}{lose()}}
+{\footnotesize\ttfamily bool Joueur\+::lose (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Win Indique si le joueur ne possède plus de bateaux et a perdu. 
+
+\begin{DoxyReturn}{Returns}
+vrai si il ne possède plus de bateau et a perdu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_aca2dccc76c7d99bfca3b444821fe5a55}\label{classJoueur_aca2dccc76c7d99bfca3b444821fe5a55}} 
+\index{Joueur@{Joueur}!modifGrille@{modifGrille}}
+\index{modifGrille@{modifGrille}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{modifGrille()}{modifGrille()}}
+{\footnotesize\ttfamily bool Joueur\+::modif\+Grille (\begin{DoxyParamCaption}\item[{string}]{Start\+Bateau,  }\item[{int}]{direction,  }\item[{int}]{taille\+\_\+bateau }\end{DoxyParamCaption})}
+
+
+
+Modification de la grille de bateaux Ajoute un nouveau bateau à la grille. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Start\+Bateau} & Case de départ du nouveau bateau \\
+\hline
+\mbox{\texttt{ in}}  & {\em direction} & Direction du positionnement du bateau \\
+\hline
+\mbox{\texttt{ in}}  & {\em taille\+\_\+bateau} & Taille du bateau à placer \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a068f9e05da3c41004ec8c8c2b337a622}\label{classJoueur_a068f9e05da3c41004ec8c8c2b337a622}} 
+\index{Joueur@{Joueur}!setIA@{setIA}}
+\index{setIA@{setIA}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setIA()}{setIA()}}
+{\footnotesize\ttfamily void Joueur\+::set\+IA (\begin{DoxyParamCaption}\item[{bool}]{val }\end{DoxyParamCaption})}
+
+
+
+Modification de la variable de choix pour l\textquotesingle{}IA. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em booléen} & de choix de la valeur de l\textquotesingle{}IA \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJoueur_abbf8c11ea8a2f930a51cabfaed9bddd2}\label{classJoueur_abbf8c11ea8a2f930a51cabfaed9bddd2}} 
+\index{Joueur@{Joueur}!setName@{setName}}
+\index{setName@{setName}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setName()}{setName()}}
+{\footnotesize\ttfamily void Joueur\+::set\+Name (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Modification du nom du joueur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nouveau} & nom du joueur \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJoueur_a476c5e83be34c9762f1cb592248b05e0}\label{classJoueur_a476c5e83be34c9762f1cb592248b05e0}} 
+\index{Joueur@{Joueur}!setNombreBateau@{setNombreBateau}}
+\index{setNombreBateau@{setNombreBateau}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{setNombreBateau()}{setNombreBateau()}}
+{\footnotesize\ttfamily void Joueur\+::set\+Nombre\+Bateau (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Modification du nombre de bateaux du joueur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nouveau} & nombre de bateaux \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classJoueur_a488129c1f8509b96d004bc1f59aa58a6}\label{classJoueur_a488129c1f8509b96d004bc1f59aa58a6}} 
+\index{Joueur@{Joueur}!tir@{tir}}
+\index{tir@{tir}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{tir()}{tir()}}
+{\footnotesize\ttfamily bool Joueur\+::tir (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$}]{adversaire }\end{DoxyParamCaption})}
+
+
+
+Tir Tir d\textquotesingle{}un joueur sur un bateau adverse. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv} & Pointeur sur la classe du joueur adverse \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classJoueur_a4774e6118c7ceba83552a4db427ae25b}\label{classJoueur_a4774e6118c7ceba83552a4db427ae25b}} 
+\index{Joueur@{Joueur}!tir\_recu@{tir\_recu}}
+\index{tir\_recu@{tir\_recu}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{tir\_recu()}{tir\_recu()}}
+{\footnotesize\ttfamily bool Joueur\+::tir\+\_\+recu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classJoueur}{Joueur}} $\ast$}]{adversaire,  }\item[{string}]{case\+\_\+tire }\end{DoxyParamCaption})}
+
+
+
+Tir reçu Traitement du tir reçu. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em adv} & Pointeur sur la classe du joueur ayant tiré \\
+\hline
+\mbox{\texttt{ in}}  & {\em case\+\_\+tire} & Case sur laquelle le tir a été effectué \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+vrai si fonction bien réalisée 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classJoueur_a1c44790decb7b55fe4b72ae861ee2b88}\label{classJoueur_a1c44790decb7b55fe4b72ae861ee2b88}} 
+\index{Joueur@{Joueur}!GrilleBateau@{GrilleBateau}}
+\index{GrilleBateau@{GrilleBateau}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{GrilleBateau}{GrilleBateau}}
+{\footnotesize\ttfamily bool Joueur\+::\+Grille\+Bateau\mbox{[}10\mbox{]}\mbox{[}10\mbox{]}}
+
+Tableau d\textquotesingle{}emplacement des bateaux\+: 1 bateau à la position x,y 0 pas de bateau \mbox{\Hypertarget{classJoueur_aeaa2702e469a850d3de74c1c2d979ad1}\label{classJoueur_aeaa2702e469a850d3de74c1c2d979ad1}} 
+\index{Joueur@{Joueur}!GrilleTir@{GrilleTir}}
+\index{GrilleTir@{GrilleTir}!Joueur@{Joueur}}
+\doxysubsubsection{\texorpdfstring{GrilleTir}{GrilleTir}}
+{\footnotesize\ttfamily int Joueur\+::\+Grille\+Tir\mbox{[}10\mbox{]}\mbox{[}10\mbox{]}}
+
+Emplacement des tirs du joueur \+: 0 rien sur la position x,y 1 tir dans l\textquotesingle{}eau à la position x,y 2 tir touché à la position x,y 3 élement de bateau coulé à la position x,y 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Joueur.\+h\item 
+Joueur.\+cpp\end{DoxyCompactItemize}
