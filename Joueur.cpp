@@ -13,7 +13,6 @@ void clear(){
 
 void suivant(string message){
   string entree;
-  char C;
   cout << message;
   cin >> entree;
   cout << endl;
