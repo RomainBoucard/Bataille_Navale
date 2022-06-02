@@ -2,15 +2,6 @@
 #include "stdlib.h"
 using namespace std;
 
-// Bateau::Bateau(){
-  
-// }
-// bool Bateau::checkTouche(int x,int y) const{
-//   int i;
-//   int j;
-  
-// } 
-
 Bateau::Bateau(string nom, int taille, string debut, int direction){
     this->nom=nom;
     this->taille=taille;

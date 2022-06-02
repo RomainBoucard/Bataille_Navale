@@ -1,38 +1,176 @@
 \hypertarget{classBateau}{}\doxysection{Bateau Class Reference}
 \label{classBateau}\index{Bateau@{Bateau}}
+
+
+La déclaration de la classe \mbox{\hyperlink{classBateau}{Bateau}}.  
+
+
+
+
+{\ttfamily \#include \char`\"{}Bateau.\+h\char`\"{}}
+
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classBateau_a2dd941f2e9eef8ed4a6ea99697e95bce}\label{classBateau_a2dd941f2e9eef8ed4a6ea99697e95bce}} 
-{\bfseries Bateau} (string nom, int taille, string debut, int direction)
-\item 
-\mbox{\Hypertarget{classBateau_afce45d9f531e909b8a425b1e8cc94a41}\label{classBateau_afce45d9f531e909b8a425b1e8cc94a41}} 
-string {\bfseries get\+\_\+name} ()
-\item 
-\mbox{\Hypertarget{classBateau_a1b2e44f03f2eb0bd7d7042ee7e26325f}\label{classBateau_a1b2e44f03f2eb0bd7d7042ee7e26325f}} 
-int {\bfseries get\+\_\+X} (int x)
-\item 
-\mbox{\Hypertarget{classBateau_a3604b19dca845e258a5f9f44a234d55d}\label{classBateau_a3604b19dca845e258a5f9f44a234d55d}} 
-int {\bfseries get\+\_\+Y} (int y)
-\item 
-\mbox{\Hypertarget{classBateau_a9b33833cd5f9333a444822c5df51b94d}\label{classBateau_a9b33833cd5f9333a444822c5df51b94d}} 
-int {\bfseries get\+\_\+taille} ()
-\item 
+\mbox{\hyperlink{classBateau_a2dd941f2e9eef8ed4a6ea99697e95bce}{Bateau}} (string nom, int taille, string debut, int direction)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{classBateau_afce45d9f531e909b8a425b1e8cc94a41}{get\+\_\+name}} ()
+\begin{DoxyCompactList}\small\item\em Nom du \mbox{\hyperlink{classBateau}{Bateau}}. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBateau_a1b2e44f03f2eb0bd7d7042ee7e26325f}{get\+\_\+X}} (int x)
+\begin{DoxyCompactList}\small\item\em Récupérer coordonnées X Renvoie le numéro de ligne de la case spécifiée en paramètre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBateau_a3604b19dca845e258a5f9f44a234d55d}{get\+\_\+Y}} (int y)
+\begin{DoxyCompactList}\small\item\em Récupérer coordonnées Y Renvoie le numéro de colonne de la case spécifiée en paramètre. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBateau_a9b33833cd5f9333a444822c5df51b94d}{get\+\_\+taille}} ()
+\begin{DoxyCompactList}\small\item\em Taille du bateau. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classBateau_adb42605977566653434ff7d1ebbccb87}\label{classBateau_adb42605977566653434ff7d1ebbccb87}} 
-void {\bfseries get\+\_\+\+Xs} ()
-\item 
+void \mbox{\hyperlink{classBateau_adb42605977566653434ff7d1ebbccb87}{get\+\_\+\+Xs}} ()
+\begin{DoxyCompactList}\small\item\em Coordonnées X Affiche l\textquotesingle{}ensemble des numéros des lignes du bateau. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classBateau_aa193ed2829a294b5fb89932dd0e9518a}\label{classBateau_aa193ed2829a294b5fb89932dd0e9518a}} 
-void {\bfseries get\+\_\+\+Ys} ()
-\item 
+void \mbox{\hyperlink{classBateau_aa193ed2829a294b5fb89932dd0e9518a}{get\+\_\+\+Ys}} ()
+\begin{DoxyCompactList}\small\item\em Coordonnées Y Affiche l\textquotesingle{}ensemble des numéros des colonnes du bateau. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBateau_a3b885278a89debc2b9d21dcb9f033017}{check\+Touche}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Vérifie si le bateau est touché \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBateau_a5e145fcd0f7f7e5a9788f37ce10a2153}{perte\+\_\+pdv}} ()
+\begin{DoxyCompactList}\small\item\em Enlève un point de vie au bateau Enlève un point de vie et vérifie si le bateau est coulé \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+La déclaration de la classe \mbox{\hyperlink{classBateau}{Bateau}}. 
+
+La classe {\ttfamily \mbox{\hyperlink{classBateau}{Bateau}}} permet d\textquotesingle{}utiliser les bateaux d\textquotesingle{}un joueur \begin{DoxyAuthor}{Author}
+Romain B\+O\+U\+C\+A\+RD Maxime R\+EY Mathis T\+A\+L\+ON 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022 
+\end{DoxyDate}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBateau_a2dd941f2e9eef8ed4a6ea99697e95bce}\label{classBateau_a2dd941f2e9eef8ed4a6ea99697e95bce}} 
+\index{Bateau@{Bateau}!Bateau@{Bateau}}
+\index{Bateau@{Bateau}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{Bateau()}{Bateau()}}
+{\footnotesize\ttfamily Bateau\+::\+Bateau (\begin{DoxyParamCaption}\item[{string}]{nom,  }\item[{int}]{taille,  }\item[{string}]{debut,  }\item[{int}]{direction }\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em nom} & Nom du bateau créé \\
+\hline
+\mbox{\texttt{ in}}  & {\em taille} & Taille du bateau créé \\
+\hline
+\mbox{\texttt{ in}}  & {\em debut} & Case du début du bateau \\
+\hline
+\mbox{\texttt{ in}}  & {\em direction} & Sens du placement du bateau depuis la case \char`\"{}debut\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
 \mbox{\Hypertarget{classBateau_a3b885278a89debc2b9d21dcb9f033017}\label{classBateau_a3b885278a89debc2b9d21dcb9f033017}} 
-bool {\bfseries check\+Touche} (int x, int y)
-\item 
+\index{Bateau@{Bateau}!checkTouche@{checkTouche}}
+\index{checkTouche@{checkTouche}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{checkTouche()}{checkTouche()}}
+{\footnotesize\ttfamily bool Bateau\+::check\+Touche (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Vérifie si le bateau est touché 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Numéro de la ligne de la case ciblée \\
+\hline
+\mbox{\texttt{ in}}  & {\em y} & Numéro de la colonne de la case ciblée \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool \+: vrai si le bateau est touché sinon faux 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBateau_afce45d9f531e909b8a425b1e8cc94a41}\label{classBateau_afce45d9f531e909b8a425b1e8cc94a41}} 
+\index{Bateau@{Bateau}!get\_name@{get\_name}}
+\index{get\_name@{get\_name}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{get\_name()}{get\_name()}}
+{\footnotesize\ttfamily string Bateau\+::get\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Nom du \mbox{\hyperlink{classBateau}{Bateau}}. 
+
+Fonction get et set \begin{DoxyReturn}{Returns}
+string \+: nom du bateau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBateau_a9b33833cd5f9333a444822c5df51b94d}\label{classBateau_a9b33833cd5f9333a444822c5df51b94d}} 
+\index{Bateau@{Bateau}!get\_taille@{get\_taille}}
+\index{get\_taille@{get\_taille}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{get\_taille()}{get\_taille()}}
+{\footnotesize\ttfamily int Bateau\+::get\+\_\+taille (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Taille du bateau. 
+
+\begin{DoxyReturn}{Returns}
+int \+: taille du bateau 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBateau_a1b2e44f03f2eb0bd7d7042ee7e26325f}\label{classBateau_a1b2e44f03f2eb0bd7d7042ee7e26325f}} 
+\index{Bateau@{Bateau}!get\_X@{get\_X}}
+\index{get\_X@{get\_X}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{get\_X()}{get\_X()}}
+{\footnotesize\ttfamily int Bateau\+::get\+\_\+X (\begin{DoxyParamCaption}\item[{int}]{x }\end{DoxyParamCaption})}
+
+
+
+Récupérer coordonnées X Renvoie le numéro de ligne de la case spécifiée en paramètre. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Numéro de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: numéro de ligne de la case demandée 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBateau_a3604b19dca845e258a5f9f44a234d55d}\label{classBateau_a3604b19dca845e258a5f9f44a234d55d}} 
+\index{Bateau@{Bateau}!get\_Y@{get\_Y}}
+\index{get\_Y@{get\_Y}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{get\_Y()}{get\_Y()}}
+{\footnotesize\ttfamily int Bateau\+::get\+\_\+Y (\begin{DoxyParamCaption}\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Récupérer coordonnées Y Renvoie le numéro de colonne de la case spécifiée en paramètre. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em x} & Numéro de la case \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int \+: numéro de colonne de la case demandée 
+\end{DoxyReturn}
 \mbox{\Hypertarget{classBateau_a5e145fcd0f7f7e5a9788f37ce10a2153}\label{classBateau_a5e145fcd0f7f7e5a9788f37ce10a2153}} 
-bool {\bfseries perte\+\_\+pdv} ()
-\end{DoxyCompactItemize}
+\index{Bateau@{Bateau}!perte\_pdv@{perte\_pdv}}
+\index{perte\_pdv@{perte\_pdv}!Bateau@{Bateau}}
+\doxysubsubsection{\texorpdfstring{perte\_pdv()}{perte\_pdv()}}
+{\footnotesize\ttfamily bool Bateau\+::perte\+\_\+pdv (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Enlève un point de vie au bateau Enlève un point de vie et vérifie si le bateau est coulé 
+
+\begin{DoxyReturn}{Returns}
+bool \+: faux si le bateau est coulé sinon vrai 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-Bateau.\+h\item 
+\mbox{\hyperlink{Bateau_8h}{Bateau.\+h}}\item 
 Bateau.\+cpp\end{DoxyCompactItemize}

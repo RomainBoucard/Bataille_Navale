@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['tir_42',['tir',['../classJoueur.html#a488129c1f8509b96d004bc1f59aa58a6',1,'Joueur']]],
-  ['tir_5frecu_43',['tir_recu',['../classJoueur.html#a4774e6118c7ceba83552a4db427ae25b',1,'Joueur']]]
+  ['setia_60',['setIA',['../classJoueur.html#a068f9e05da3c41004ec8c8c2b337a622',1,'Joueur']]],
+  ['setname_61',['setName',['../classJoueur.html#abbf8c11ea8a2f930a51cabfaed9bddd2',1,'Joueur']]],
+  ['setnombrebateau_62',['setNombreBateau',['../classJoueur.html#a476c5e83be34c9762f1cb592248b05e0',1,'Joueur']]]
 ];

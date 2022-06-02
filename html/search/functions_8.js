@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['setia_39',['setIA',['../classJoueur.html#a068f9e05da3c41004ec8c8c2b337a622',1,'Joueur']]],
-  ['setname_40',['setName',['../classJoueur.html#abbf8c11ea8a2f930a51cabfaed9bddd2',1,'Joueur']]],
-  ['setnombrebateau_41',['setNombreBateau',['../classJoueur.html#a476c5e83be34c9762f1cb592248b05e0',1,'Joueur']]]
+  ['perte_5fpdv_59',['perte_pdv',['../classBateau.html#a5e145fcd0f7f7e5a9788f37ce10a2153',1,'Bateau']]]
 ];

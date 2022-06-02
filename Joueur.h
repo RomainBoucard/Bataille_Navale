@@ -1,3 +1,12 @@
+/**
+* @file Joueur.h
+* @brief Contient la déclaration de la classe Joueur
+* @author Romain BOUCARD Maxime REY Mathis TALON
+* @version 1.0
+* @date 2022
+* @copyright Centrale Nantes
+*/
+
 #ifndef cpp_Joueur_h
 #define cpp_Joueur_h
 
@@ -24,6 +33,14 @@ using namespace std;
 extern void clear();
 extern void suivant(string message);
 
+/**
+* @class Joueur "Joueur.h"
+* @brief La déclaration de la classe Joueur
+* @details La classe \c Joueur permet de joueur à la bataille navale
+* @author Romain BOUCARD Maxime REY Mathis TALON
+* @version 1.0
+* @date 2022
+*/
 class Joueur {
 
 private:
