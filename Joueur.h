@@ -1,12 +1,3 @@
-/**
-* @file Joueur.h
-* @brief Contient la déclaration de la classe Joueur
-* @author Romain BOUCARD Maxime REY Mathis TALON
-* @version 1.0
-* @date 2022
-* @copyright Centrale Nantes
-*/
-
 #ifndef cpp_Joueur_h
 #define cpp_Joueur_h
 
@@ -33,14 +24,6 @@ using namespace std;
 extern void clear();
 extern void suivant(string message);
 
-/**
-* @class Joueur "Joueur.h"
-* @brief La déclaration de la classe Joueur
-* @details La classe \c Joueur permet de joueur à la bataille navale
-* @author Romain BOUCARD Maxime REY Mathis TALON
-* @version 1.0
-* @date 2022
-*/
 class Joueur {
 
 private:
@@ -61,7 +44,34 @@ private:
     False : Joueur réel
   */
   bool IA;
+  /**
+    Element de déclenchement d'actions pour l'IA. 
+    True : Déclencher action
+    False : Ne rien faire
+  */
+  bool flag;
 
+  /**
+    Direction du tir de l'IA. 
+    0 : LEFT
+    1 : RIGHT
+    2 : UP
+    3 : DOWN
+  */
+  int directionTirIA;
+   /**
+    Memoire du tir précédent touché ou non
+  */
+  int previoustouchIA;
+
+  /**
+    Memoire d'un changement de direction de l'IA
+  */
+  bool directionChangeIA;
+  /**
+    Memoire des tirs touchés par l'IA
+  */
+  vector <string> TableauDeTirTouche;
   /**
     Bateaux en possession du joueur
     Tableau de classes bateaux
@@ -189,6 +199,27 @@ public:
     */
     string getName();
     /**
+      \brief Statut du joueur
+      \return bool : Satut du joueur True = IA, False = Humain
+    */
+    bool getIA();
+    /**
+      \brief Direction du tir de l'IA
+      \return int : Direction actuelle du tir
+    */
+    int getDirectionTirIA();
+    /**
+      \brief Direction du tir de l'IA
+      \param[in] Nouvelle direction du tir
+    */
+    void setDirectionTirIA(int dir);
+
+    /**
+      \brief Detecte la nouvelle direction du tir de l'IA
+      \return int : Nouvelle direction du tir 
+    */
+    int newDirectionTirIA();
+    /**
       \brief Modification du nom du joueur
       \param[in] Nouveau nom du joueur
     */
@@ -244,9 +275,9 @@ public:
         Traitement du tir reçu
       \param[in] adv Pointeur sur la classe du joueur ayant tiré
       \param[in] case_tire Case sur laquelle le tir a été effectué
-      \return vrai si fonction bien réalisée
+      \return 0 : dans l'eau, 1 : touché, 2 : touché coulé
     */
-    bool tir_recu(Joueur *adversaire, string case_tire);
+    int tir_recu(Joueur *adversaire, string case_tire);
     
     /**
       \brief Bateau coulé

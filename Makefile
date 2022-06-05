@@ -9,11 +9,13 @@ CPP_FLAGS = -isystem $(GTEST_DIR)/include  -g -Wall -Wextra -pthread -std=c++11
 GTEST_HEADERS = $(GTEST_DIR)/include/gtest/*.h \
                 $(GTEST_DIR)/include/gtest/internal/*.h
 
+main: main.o Bateau.o Joueur.o
+	g++ -o main main.o Bateau.o Joueur.o
+
 
 JoueurTest.out: Joueur.o JoueurTest.o Bateau.o
 	g++ $(CPP_FLAGS) -o JoueurTest.out JoueurTest.o Joueur.o Bateau.o -lpthread $(GTEST_LIB)/libgtest.a $(GTEST_LIB)/libgtest_main.a
-main: main.o Bateau.o Joueur.o
-	g++ -o main main.o Bateau.o Joueur.o
+
 main.o: main.cpp
 	g++ -c main.cpp
 Bateau.o: Bateau.cpp
